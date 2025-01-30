@@ -24,7 +24,7 @@ git clone https://github.com/tu-usuario/university-schedule-creator.git
 cd university-schedule-creator
 ```
 2. Asegúrate de tener los paquetes necesarios instalados.
-3. Modifica la lista de clases en el archivo `main.py`.
+3. Modifica la lista de clases en el archivo `classes.py`.
 4. Ejecuta el script `py main.py` para generar el archivo `university-schedule.ics.`
 
 5. Importa el archivo `university-schedule.ics` en tu calendario preferido.
