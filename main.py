@@ -1,3 +1,4 @@
+from classes import classes
 from ics import Calendar, Event
 from datetime import datetime, timedelta
 from ics.grammar.parse import ContentLine
@@ -7,30 +8,6 @@ import pytz
 cal = Calendar()
 
 # Detalles de las clases
-classes = [{
-    "name": "Clase de Ejemplo",
-    "days": [
-        {
-            "day": "Monday",
-            "start_time": "09:00",
-            "end_time": "10:30",
-            "location": "Campus Central | Salon 101"
-        },
-        {
-            "day": "Wednesday",
-            "start_time": "11:00",
-            "end_time": "12:30",
-            "location": "Campus Norte | Salon 202"
-        },
-        {
-            "day": "Friday",
-            "start_time": "15:00",
-            "end_time": "16:30",
-            "location": "Campus Sur | Salon 303"
-        }
-    ]
-}]
-
 
 # Mapa de días de la semana a valores numéricos
 days_map = {
@@ -39,11 +16,12 @@ days_map = {
     "Wednesday": 'WE',
     "Thursday": 'TH',
     "Friday": 'FR',
+    "Saturday": 'SA',
 }
 
 # Fecha de inicio y fin del semestre
-start_date = datetime(2024, 8, 5)
-end_date = datetime(2024, 12, 1)
+start_date = datetime(2025, 2, 3)
+end_date = datetime(2025, 6, 1)
 
 # Zona horaria de Colombia
 colombia_tz = pytz.timezone('America/Bogota')
